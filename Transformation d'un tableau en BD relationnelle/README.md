@@ -13,7 +13,7 @@
 
 
 ##Schéma Entité-Association
-![image1](schéma_Entité-Association .png)
+![image1](schéma_Entité-Association.png)
 
 
 
@@ -34,7 +34,7 @@
 - select distinct X , Y 
 	- from r
 	- where X in (select X
-			- from r
-			- group by X 
-			- having count(distinct Y)>1 )
+			from r
+			group by X 
+			having count(distinct Y)>1 )
 - order by X, Y ;

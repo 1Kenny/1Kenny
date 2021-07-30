@@ -1,5 +1,5 @@
 --DELOIN Gaspar 11806858 
---NIAMKE Fian 11715528
+--NIAMKE Ange-Kennedy 11715528
 drop table if exists Departement cascade;
 create table Departement(
     idDep integer not null,
@@ -52,7 +52,7 @@ drop table if exists Candidat cascade;
 create table Candidat(
     numPanneau integer not null,
     Nom varchar(80) not null,
-    Prénom varchar(80) not null,
+    PrÃ©nom varchar(80) not null,
     Sexe varchar(80) not null,
     primary key(numPanneau)
  );
@@ -69,42 +69,42 @@ create table Resultat_par_Bureau(
  );
 
 insert into Departement 
-select distinct "Code du département", "Département"
+select distinct "Code du dÃ©partement", "DÃ©partement"
 from "election-csv" ;
 
 insert into Circonscription  
-select distinct "Code de la circonscription", "Code du département", "Circonscription"
+select distinct "Code de la circonscription", "Code du dÃ©partement", "Circonscription"
 from "election-csv" ;
 
 insert into Commune  
-select distinct "Code de la commune", "Code du département", "Commune"
+select distinct "Code de la commune", "Code du dÃ©partement", "Commune"
 from "election-csv" ;
 
 insert into bureau_de_vote  
-select distinct "Code de la commune", "Code du département", "Bureau de vote","Inscrits","Abstentions","Blancs","Nuls","Adresse"
+select distinct "Code de la commune", "Code du dÃ©partement", "Bureau de vote","Inscrits","Abstentions","Blancs","Nuls","Adresse"
 from "election-csv" ;
 
 insert into candidat  
-select distinct "N°Panneau","Nom","Prénom","Sexe"
+select distinct "NÂ°Panneau","Nom","PrÃ©nom","Sexe"
 from "election-csv" ;
 
 insert into appartient 
-select distinct "Code de la commune","Code du département","Bureau de vote","Code de la circonscription"
+select distinct "Code de la commune","Code du dÃ©partement","Bureau de vote","Code de la circonscription"
 from "election-csv";
 
 insert into resultat_par_bureau 
-select "Code de la commune","Code du département","Bureau de vote","N°Panneau","Voix"
+select "Code de la commune","Code du dÃ©partement","Bureau de vote","NÂ°Panneau","Voix"
 from "election-csv";
 
 drop function if exists best_par_candidat;
 create function best_par_candidat(numPan integer)
-  returns table (prct_voix float,idCom integer,nomCom varchar(80), classement bigint, nom varchar(80), prénom varchar(80))
+  returns table (prct_voix float,idCom integer,nomCom varchar(80), classement bigint, nom varchar(80), prÃ©nom varchar(80))
 as
 $$
-select nb::float/nbVoixExprimes::float*100 as prct_voix, idCom, nomCom, classement, nom, prénom 
+select nb::float/nbVoixExprimes::float*100 as prct_voix, idCom, nomCom, classement, nom, prÃ©nom 
 from 
 	(
-	select nb,idDep,idCom, nomCom,numpanneau ,rank() over (partition by idDep,idCom order by nb desc) as classement, cdd.nom as nom, cdd.prénom as prénom 
+	select nb,idDep,idCom, nomCom,numpanneau ,rank() over (partition by idDep,idCom order by nb desc) as classement, cdd.nom as nom, cdd.prÃ©nom as prÃ©nom 
 	from
 		(
 		select sum(nbVote) as nb, idDep, idCom, c.nomcom as nomCom, numpanneau 

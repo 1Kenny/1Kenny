@@ -38,5 +38,5 @@ Pour la recharge de capsule, nous avons fait en sorte que lorsque le joueur est 
 
 #### Diagramme de Classe
 
-![Diagramme de classe](Diagramme de Classe.png)
+![Diagramme de classe](Diagramme_Classe.png)
 

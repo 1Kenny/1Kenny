@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="css/materialicons.css" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <script type="text/javascript" src="js/materialize.min.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- icones -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="LIFAP5-Projet.css">
+
+
+
+
+
+
+
+    <title>Projet-LIFAP5-2019-2020-cote-Client</title>
+  </head>
+
+  <!-- Modal Structure -->
+  <div id="id-modal-quizz-menu" class="modal">
+    <div class="modal-content">
+      <h4>En-tete modal</h4>
+      <p>Tas de texte</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">valider</a>
+    </div>
+  </div>
+
+  <body>
+    <header>
+      <nav class="nav-extended blue-grey lighten-1">
+        <div class="navbar-fixed">
+          <nav>
+            <div class="nav-wrapper blue-grey">
+              <a href="#!" class="brand-logo  center">Questionnaire K & F<i class="material-icons right">question_answer</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li>
+                  <form class="form-inline">
+                    <div class="input-field  blue-grey lighten-100">
+                     <input class="form-control" type="search" id="recher" placeholder="Search" aria-label="Recherche">
+
+                      <label class="label-icon" for="search"><i class="material-icons"  onclick="getQuizzess(1, true)">search</i></label>
+                      
+                      <i class="material-icons" onclick="supprimer()">close</i>
+
+                    </div>
+                    <div>
+                       <label class="label-icon" for="search"><button class="btn btn-outline-success" id="search-btn" type="submit" onclick="chercher()">Recherche</button></label>
+                     </div>
+                   
+
+                  </form>
+                </li>
+                <li>
+                  <i id="id-login" class="material-icons">face</i>
+                </li>
+              </ul>
+            </div>
+            <!-- nav-wrapper  -->
+          </nav>
+        </div>
+        <!-- navbar-fixed -->
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent tabs-fixed-width">
+            <li class="tab">
+              <a class="active" href="#id-all-quizzes">Tous les questionnaires</a>
+            </li>
+            <li class="tab"><a href="#id-my-quizzes">Mes questionnaires</a></li>
+            <li class="tab"><a href="#id-my-answers">Mes réponses</a></li>
+          </ul>
+        </div>
+        <!-- nav-content -->
+      </nav>
+      <!-- nav-extended -->
+    </header>
+
+
+    <main>
+      <div>
+        <!-- class="container" -->
+        <!-- Un premier onglet pour tous les quizzes-->
+        <div id="id-all-quizzes">
+
+              <div class="col-6">
+             <div class="row text-white bg-dark" >
+                             
+               <div class="col-3" id="trie-c">
+                  <ul class="col l4">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NOMBRE </a><span class="caret"></span>
+                      <ul class="dropdown-menu">
+                          <li><a href="#" id="croi-titre">1</a></li>
+                          <li><a href="#" id="croi-date">2</a></li>
+                          <li><a href="#" id="croi-date">3</a></li>
+                          <li><a href="#" id="croi-date">4</a></li>
+                          <li><a href="#" id="croi-date">5</a></li>
+                          <li><a href="#" id="croi-date">10</a></li>
+                          <li><a href="#" id="croi-date">20</a></li>
+                          <li><a href="#" id="croi-date">50</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="col-4" id="trie-c">
+                  <ul class="col l4">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TRIER</a><span class="caret"></span>
+                      <ul class="dropdown-menu">
+                          <li><a href="#" id="croi-titre">par ID</a></li>
+                          <li><a href="#" id="croi-date">par DATE</a></li>
+                          <li><a href="#" id="croi-date">par OWNER</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+               
+                <div class="col 1" id="trie-d">
+                    <ul class="col l4">
+                      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ORDONNER</a><span class="caret"></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="decroi-titre">ASC</a></li>
+                            <li><a href="#" id="decroi-date">DESC</a></li>
+                          </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+              </div>
+
+
+          <div class="row">
+            <div class="col l4">
+              <div id="id-all-quizzes-list"></div>
+
+            </div>
+            <div class="col l8">
+              <div id="id-all-quizzes-main"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Un second onglet pour ses propres quizzes-->
+        <div id="id-my-quizzes">
+          <div class="row">
+            
+            <div class="col l4">
+              <div id="id-my-quizzes-list"></div>
+            </div>
+
+            <div class="col l8">
+              <div id="id-my-quizzes-main"></div>
+            </div>
+
+          </div>
+          <h3 id="id-my-quizzes-title"></h3>
+        </div>
+
+        <!-- Un dernier onglet pour ses propres réponses-->
+        <div id="id-my-answers">
+          <div class="row">
+
+              <div class="col l4">
+                <div id="id-answers-list"></div>
+              </div>
+
+              <div class="col l8">
+                <div id="id-answer-main"></div>
+              </div>
+
+          </div>
+          <h3 id="id-my-answers-title"></h3>
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+    <footer></footer>
+
+    <footer class="page-footer grey darken-1">
+      <div class="footer-copyright">
+        <div class="container">
+          CC BY-NC-SA 3.0 FR
+          <a class="grey-text text-lighten-4 right" href="https://lifap5.univ-lyon1.fr/">lifap5.univ-lyon1.fr</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- l'ordre compte dans les scripts : ils sont lues puis interprétés DANS L'ORDRE -->
+    <script type="text/javascript" src="js/websocket.js" defer></script>
+    <script type="text/javascript" src="js/modeles.js" defer></script>
+    <script type="text/javascript" src="js/vues.js" defer></script>
+    <script type="text/javascript" src="js/app.js" defer></script>
+  </body>
+</html>
+
+
+
+
+
+
+

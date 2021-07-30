@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="JeuEntier" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/JeuEntier" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/JeuEntier" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/SDL2-2.0.3/i686-w64-mingw32/include" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="SDL2main" />
+			<Add library="SDL2.dll" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/SDL2-2.0.3/i686-w64-mingw32/lib" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="XCOPY $(#sdl2)\bin\*.dll $(TARGET_OUTPUT_DIR) /D /Y" />
+		</ExtraCommands>
+		<Unit filename="src/Bruitage.cpp" />
+		<Unit filename="src/Bruitage.h" />
+		<Unit filename="src/Choix.cpp" />
+		<Unit filename="src/Choix.h" />
+		<Unit filename="src/FonctionsMenus.cpp" />
+		<Unit filename="src/FonctionsMenus.h" />
+		<Unit filename="src/Jeu.cpp" />
+		<Unit filename="src/Jeu.h" />
+		<Unit filename="src/Jouer.cpp" />
+		<Unit filename="src/Jouer.h" />
+		<Unit filename="src/Mode7.cpp" />
+		<Unit filename="src/Mode7.h">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="src/Music.cpp" />
+		<Unit filename="src/Music.h" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Player.h" />
+		<Unit filename="src/Ressource.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="src/Ressource.h">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="src/Terrain.cpp" />
+		<Unit filename="src/Terrain.h" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

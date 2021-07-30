@@ -13,17 +13,17 @@
 
 
 ##Schéma Entité-Association
-![image](schéma_Entité-Association .png)
+![image1](schéma_Entité-Association .png)
 
 
 
 ## Dépendances fonctionnelles
 
-idDep --> nomDep
-idDep,idCom --> nomCom
-idDep,idCir --> nomCir
-idDep,idCom,idBur --> nbIns, nbVote, nbAbst, nbBlanc, nbNul, adresse
-numPanneau --> Nom, Prénom, Sexe
+- idDep --> nomDep
+- idDep,idCom --> nomCom
+- idDep,idCir --> nomCir
+- idDep,idCom,idBur --> nbIns, nbVote, nbAbst, nbBlanc, nbNul, adresse
+- numPanneau --> Nom, Prénom, Sexe
 
 
 
@@ -31,10 +31,10 @@ numPanneau --> Nom, Prénom, Sexe
 
 ## Tester la satisfaction d'une DF
 
-select distinct X , Y 
-from r
-where X in (select X
-			from r
-			group by X 
-			having count(distinct Y)>1 )
-order by X, Y ;
+- select distinct X , Y 
+	- from r
+	- where X in (select X
+			- from r
+			- group by X 
+			- having count(distinct Y)>1 )
+- order by X, Y ;

@@ -12,8 +12,8 @@
 ![image](schéma_relationnel.jpg)
 
 
-##Schéma Entité-Association
-![image1](schéma_Entité-Association.png)
+## Schéma Entité-Association
+![image](schéma_Entité-Association.png)
 
 
 

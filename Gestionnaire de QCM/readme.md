@@ -4,7 +4,7 @@ LIFAP5 - projet 2019-2020 : gestionnaire de QCM
 **Ce document est à remplir et à remettre avec votre rendu projet sur Tomuss**
 
 * URL de nôtre dépôt <https://forge.univ-lyon1.fr/p1715528/lifap5/>
-* NOM Prénom numet NIAMKE Fian p1715528
+* NOM Prénom numet NIAMKE Ange-Kennedy p1715528
 * NOM Prénom numet KOUROUMA Terna p1613659
 * Nom de votre application (optionnel)
 

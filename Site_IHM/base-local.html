@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="fr">
+ <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Projet IHM S2-2019 </title>
+      <link rel="icon" type="image/jpg" href="logo/logo-Subway.jpg">
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+       
+      
+  </head>
+  
+
+  
+ <body>
+     
+     <header>
+            <br><br><h1><center>Question à choix multiple</center></h1>
+            <h2>Bonne chance...</h2>
+           <a href="base-local.html" title="Retour à la page d'acceuil" accesskey="1">
+                <img src="logo/logo-lyon1.png" alt="Université Claude Bernard Lyon 1" title="Retour à la page d'accueil" 
+                 style="width:200px; height:100px; position: absolute; bottom: 50px; left: 16px;" >
+            </a>            
+    </header>
+     
+     
+    <nav>
+            <ul>
+                <li><a href="#Section1" title="Section maths">Section 1</a></li>
+                <li><a href="#Section2"  title="Section geopgraphie">Section 2</a></li>
+                <li><a href="#Reponse" title="Cliquer pour voir la correction du QCM">Réponse</a></li>
+                <li><a href="#Historique" title=" liste des utilisateur ayant répondu au qcm">Historique</a> </li>
+                <li><a href="#Trouver" title=" Trouver utilisateur">Recherche</a> </li>
+            </ul>
+    </nav>
+     
+      
+            <div id="maincontainer">
+    <aside>
+                    <h3>Infos utilisateur</h3>
+        
+               <form  method ="post" >
+                  <center> 
+                   <input type="text" id="nom utilisateur" placeholder="Nom" name="nom" ><br><br>
+                    <input type="text" id="prenom utilisateur" placeholder="Prenom" name="prenom" ><br><br>
+                    <input type="mail" id="mail" name="email" placeholder="Adresse mail" ><br><br>
+                    <button type = "button" class="btn btn-success" onClick="add(this)">Valider</button>
+                  </center>
+                </form>
+        <hr>
+              
+                <h3>Instructions</h3>
+                <ul>
+                    <li>Il n'est admis de consulter aucun document.</li>
+                    
+                   <li>Après avoir renseigné les informations de l'utilisateur, ils seront automatiquement ajoutés dans l'onglet "historique utilisateur" où vous aurez la possibilité de les supprimer ou les modifier</li>        
+                    <li>Vous trouverez la correction du questionnaire dans l'onglet "Réponse".</li>
+                   
+                </ul>
+        <hr> 
+        
+     </aside>
+            </div>
+     
+     
+    <section>
+         <div id="Section1">
+                
+                <article>
+                    <h4>Maths </h4>                    
+                    <p>
+						<ol>
+                            <li>Combien font 2+2 ? 
+                                  <form >
+                                        <input type ="radio" > 2 &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio" > 3 &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio" > 4 &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio" > 5
+                                   </form>
+                            </li>
+                        <br>
+				            <li>Quelle est la racine carré de 25 ?	
+                                    <form >
+
+                                        <input type ="radio"  > 255 &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio"  > 25  &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio"  > 2   &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio"  > 5   
+                                    </form>
+				            </li>
+                        <br>
+                            <li>Sachant qu’un euro vaut 6,50Fr, combien coûtent en euros 5 kg de carottes à 4,50Fr/kg ?
+                                  <form>
+                                        <input type ="radio" > 3,46€ &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio" > 3,42€ &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio" > 3,35€ &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio" > 3,55€
+                                </form>
+                            </li>
+                         <br>
+                            <li> Deux trains partent en même temps de 2 villes distantes de 500km ; l’un roule à 100km/h et l’autre à
+                                150km/h. L’heure de départ est 14h45, à quel heure les 2 trains vont-ils se croiser ?
+                                  <form >
+                                        <input type ="radio" > 15h55 &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio" > 16h15  &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio" > 16h45 &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio" > 16h55
+                                </form>
+                            </li>
+                         <br>
+				            <li>Le CDB et le mécanicien font la visite pré-vol en 20 min. Le mécanicien met à lui seul 30 min.
+                                Combien de temps mettra le CDB seul pour effectuer la pré-vol? 
+                                  <form >
+                                        <input type ="radio"  > 10min &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio"  > 1h &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio"  > 45min &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio"  > 72min
+                                </form>
+                            </li>
+
+				</ol>
+       <hr>
+                    
+                
+         </article>
+            </div>
+                
+         <div id="Section2">
+             <article>
+                    <h4>Geographie</h4>
+                    <ol>
+                            <li>  Quelle est la capitale de la Suisse ?
+                                  <form >
+                                        <input type ="radio"  > Berne &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio"  > Genève &nbsp; &nbsp; &nbsp;                        
+                                        <input type ="radio"  > Berlin
+                                </form>
+                            </li>
+                        <br>
+				            <li>  Dans quel continent se trouve l'Inde ?
+                                    <form >
+
+                                        <input type ="radio"  > En Afrique &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio"  > En Europe  &nbsp; &nbsp; &nbsp;                                    
+                                        <input type ="radio"  > En Asie   
+                                    </form>
+				            </li>
+                      <br>
+                            <li> Dans quelle région française se trouve le département du Bas-Rhin ?
+                                  <form >
+                                       <input type ="radio"  > En Nord Pas-de-Calais &nbsp; &nbsp; &nbsp;
+                                       <input type ="radio"  > En Lorraine  &nbsp; &nbsp; &nbsp;                                    
+                                      <input type ="radio"  >  En Alsace  
+                                </form>
+                            </li>
+                                <br>
+                            <li> Dans quel pays se trouve la ville de Tijuana ?
+                                  <form >
+                                        <input type ="radio" name="nicola" value="2"> En Espagne &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio" name="nicola" value="3"> Au Mexique  &nbsp; &nbsp; &nbsp;                                    
+                                        <input type ="radio" name="nicola" value="5"> Au Portugal  
+                                </form>
+                            </li>
+                     <br>
+				            <li> Lequel de ces pays a du vert sur son drapeau ?
+                                  <form >
+                                        <input type ="radio"  > La Russie &nbsp; &nbsp; &nbsp;
+                                        <input type ="radio"  > L'Espagne &nbsp; &nbsp; &nbsp;                                    
+                                        <input type ="radio"  > Le Portugal  
+                                </form>
+                            </li>
+
+				</ol>
+        <hr>
+        </article>
+    </div>
+        
+            <div id="Reponse">
+                <article>
+                    <h4> Réponse QCM</h4>
+                   <center><h5> Section Math</h5></center>
+                    <br>
+                    
+                   <ol>
+                        <li> 2</li>
+                   
+                       <li> 5</li>
+                       
+                       <li> 3,46€</li>
+                       
+                       <li> 16h45</li>
+                       
+                       <li>  10 min </li>
+                   </ol>
+                      <center>  <h5> Section Geographie</h5></center>  <br>
+                    <ol>
+                        <li> Genève</li>
+                   
+                       <li> Asie</li>
+                       
+                       <li> En Alsace</li>
+                       
+                       <li> Au Mexique</li>
+                       
+                       <li> Le Portugal</li>
+                   </ol>   
+                  
+            </article>
+        </div>
+        
+        <hr>
+          <div id="Historique">
+            <article>
+                    <h4>Historique</h4>
+                    <button type="button" class="btn btn-info" data-toggle="collapse" href="#tableau">Liste Utilisateur</button>
+               <div id="tableau" class="collapse">
+		                  <table>
+			                     <thead>
+				                        <tr>
+					                       <th>Nom</th>
+					                       <th>Prenom</th>
+					                       <th>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Email</th>		
+				                        </tr>
+			                     </thead>
+			                  <tbody id="tableau_utilisateur" >
+				                        <tr>
+    					                   <td>Mario</td>
+                                            <td>Diaz</td>
+                                            <td>Mario.Diaz@hotmail.fr</td>
+                                            <td><button type="button" class="btn btn-warning" onClick="modif(this, 0)">Modifier</button></td>
+                                            <td><button type="button" class="btn btn-danger" onClick="destroy(this)">Supprimer</button></td>
+				                        </tr>
+                                     
+				                        <tr >
+                                            <td>Claude</td>
+                                            <td>Bernard</td>
+                                            <td>Claude.Bernard@hotmail.fr</td>
+                                            <td><button type="button" class="btn btn-warning" onClick="modif(this, 0)">Modifier</button></td>
+                                            <td><button type="button" class="btn btn-danger" onClick="destroy(this)">Supprimer</button></td>
+				                        </tr>
+                                     
+				                        <tr>
+                                            <td>Antoine</td>
+                                            <td>Jores</td>
+                                            <td>Antoine.Jores@hotmail.fr</td>
+                                            <td><button type="button" class="btn btn-warning" onClick="modif(this, 0)">Modifier</button></td>
+                                            <td><button type="button" class="btn btn-danger" onClick="destroy(this)">Supprimer</button></td>
+				                        </tr>
+                                     
+                                        <tr>
+                                            <td>Paul</td>
+                                            <td>Pogba</td>
+                                            <td>Paul.Pogba@hotmail.fr</td>
+                                            <td><button type="button" class="btn btn-warning" onClick="modif(this, 0)">Modifier</button></td>
+                                            <td><button type="button" class="btn btn-danger" onClick="destroy(this)">Supprimer</button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Fabienne</td>
+                                            <td>Souza</td>
+                                            <td>Fabienne.Souza@hotmail.fr</td>
+                                            <td><button type="button" class="btn btn-warning" onClick="modif(this, 0)">Modifier</button></td>
+                                            <td><button type="button" class="btn btn-danger" onClick="destroy(this)">Supprimer</button></td>
+                                        </tr>				
+			                 </tbody>
+		              </table>
+	       </div> 
+
+                </article>
+                </div>  
+        <hr>
+     <div id="Trouver">
+         <article>
+                    <h4> Rechercher Utilisateur</h4>
+               <form id="searchthis" title="Rechercher utilisateur par nom,prénom ou mail ">                
+			     <center><input  id="search" name="Mot" type="text" placeholder="Nom,Prenom ou email" ><br><br>
+				<button id="search-btn" type="button" onClick="recherche(this)">Rechercher</button>	</center>		
+		       </form>
+         </article>
+        </div>
+        <div><article>
+			<table id="tableau_r">
+				<thead>
+                </thead>
+				<tbody>
+				</tbody>
+			</table>
+	</article></div>
+    </section>
+       
+               <footer title="Contacter nous pour tous suggestions  ">
+                   Contacts:
+                   <a href="https://mail.univ-lyon1.fr"  ><i>fian.niamke@etu.univ-lyon1.fr & mouhamed.kandji@etu.univ-lyon1.fr</i></a> &nbsp; &nbsp; &nbsp;
+                   <a href="https://perso.liris.cnrs.fr/stephanie.jean-daubias/enseignement/IHM/">Plan d'accès</a>&nbsp; &nbsp; &nbsp;
+                   <a href= "https://www.instagram.com/ke.nn.yy__/">  <img src="logo/instagram.png"></a><a href="https://www.instagram.com/imperfect_nigga" >
+                instagram
+            </a>    &nbsp; &nbsp; &nbsp;
+                   © Copyright 2019 
+     </footer>
+
+
+
+	
+
+
+    
+	<script src="./lib/js/jquery-3.3.1.min.js"></script>
+	<script src="./lib/js/popper.min.js"></script>
+	<script src="./lib/js/bootstrap.min.js"></script>
+
+	
+	
+	<script>
+		
+		function mailCheck(event, mailValid)
+            {
+                 var inputMail = document.querySelector("input[type=email]");
+                  var regexMail = RegExp('[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}');
+
+                    if (!regexMail.test(inputMail.value)) 
+                    {
+
+                        inputMail.classList.add("is-invalid");
+                        alert("Addresse mail invalide.");
+                        return false;
+                    }
+                    else
+                    {
+                        inputMail.classList.replace("is-invalid", "is-valid");
+                        return true;
+                    }
+            }
+        
+        
+	   function add(ligne)
+            {
+                var tableau=document.getElementById("tableau_utilisateur");
+                var inputs=ligne.parentNode.getElementsByTagName("input");	
+	               for (var i = 0; i < inputs.length; i++)
+		              if (inputs[i].value == "") 
+                    {
+                        alert( "Merci de compléter le champ " + inputs[i].id + " avant d'ajouter cette ligne!" );
+                        inputs[i].focus(); 
+                        return false; 
+                    } 	
+	           var ligneajt = document.createElement( "tr" ); 
+	           var cellule;
+                    for (var i = 0; i < inputs.length; i++)
+                    {
+                        cellule = document.createElement( "td" );
+                        cellule.innerHTML = inputs[i].value;
+                        ligneajt.appendChild( cellule );
+                        inputs[i].value = ""; 
+                    }
+	            cellule = document.createElement( "td" );
+                cellule.innerHTML = "<button type='button' class='btn btn-warning' onClick='modif(this, 0)'>Modifier</button>";
+                ligneajt.appendChild( cellule );
+                cellule = document.createElement( "td" );
+                cellule.innerHTML = '<button type="button" class="btn btn-danger" onClick="destroy(this)">Supprimer</button>';
+                ligneajt.appendChild( cellule );
+                tableau.appendChild( ligneajt );
+                alert( "Ligne ajoutée avec succès !" );
+            }
+        
+        function destroy(ligne)
+           {
+                tableau_utilisateur.removeChild( ligne.parentNode.parentNode );
+                alert( "Ligne supprimée avec succès !" );
+           } 
+
+        function modif(ligne, action)
+        {
+                var tableau_entete=document.getElementsByTagName("table")[0].children[0].children[0];
+                var parent = ligne.parentNode.parentNode;
+	               if(action == 0)
+                    {
+                                var formulaire, cellule;
+                                formulaire = document.createElement( "form" ); 
+                                formulaire.setAttribute( "autocomplete", "off" );
+
+                       for (var i = 0; i < parent.children.length - 2; i++)
+                            {
+                                cellule = document.createElement( "td" );
+                                cellule.innerHTML = "<input type='text' class='form-control' id='"+tableau_entete.children[i].innerText+"' value='"+parent.children[i].innerText+	"'/>";
+                                parent.replaceChild( cellule, parent.children[i] );
+                            }
+                        cellule = document.createElement("td");
+                        cellule.innerHTML = '<button type = "submit" class="btn btn-success" onClick="modif(this, 1)">Valider</button>';
+                        parent.replaceChild( cellule, parent.children[parent.children.length - 2] );
+                    }
+
+	               else if (action == 1) 
+	                   {
+                            var inputs = parent.getElementsByTagName( "input" ); 
+                            var cellule;
+                            for (var i = 0; i < inputs.length; i++)
+                                if (inputs[i].value == "") 
+                                {
+                                    alert( "Merci de compléter le champ " + inputs[i].id + " avant de modifier cette ligne!" );
+                                    inputs[i].focus(); 
+                                    return false; 
+                                }
+
+                            for (var i = 0; i < parent.children.length -2; i++) 
+                            {
+                                console.log(inputs);
+                                cellule = document.createElement( "td" );
+                                cellule.innerHTML = inputs[0].value;
+                                parent.replaceChild(cellule, parent.children[i]);
+                            }
+                            cellule = document.createElement("td");
+                            cellule.innerHTML = '<button type="button" class="btn btn-warning" onClick="modif(this, 0)">Modifier</button>';
+                            parent.replaceChild( cellule, parent.children[parent.children.length - 2] );
+                            alert( "Ligne modifiée !" );
+	                 }
+        }
+        
+        
+        
+        function recherche(ligne)
+            {
+                var inputs=ligne.parentNode.parentNode.getElementsByTagName("input");
+                var ligne=tableau_utilisateur.getElementsByTagName("tr");
+                var recherchenull=true;
+	            for(var i=tableau_r.childNodes.length-1;i>0;i--)tableau_r.removeChild(tableau_r.childNodes[i]);
+                try
+                    {
+                        tableau_r.parentNode.getElementsByTagName("thead")[0].removeChild(tableau_r.parentNode.getElementsByTagName("thead")[0].childNodes[i]);
+                    }
+	           catch(ex)
+                   {
+
+                   }
+                if(inputs[0].value=="")
+                    alert("Veuillez compléter le champ avant recherche.")
+	           else{
+		              for(var nb=0;nb<ligne.length;nb++)
+                      {
+			             for(var colonne=0;colonne<=2;colonne++)
+                         {
+				            var recherche=new RegExp(inputs[0].value.toUpperCase());
+				            if(ligne[nb].getElementsByTagName("td")[colonne].innerText.toUpperCase().match(recherche) !=null)
+                            {
+                                var ligneajt=document.createElement("tr");
+                                tableau_r.insertBefore(ligneajt,null);
+                                var cellule;
+                                cellule=document.createElement("td");
+                                cellule.innerHTML=ligne[nb].getElementsByTagName("td")[colonne].innerText;
+                                cellule.setAttribute("scope","row");
+                                ligneajt.appendChild(cellule);
+					           for(var i=0;i<3;i++)
+                               {
+                                    cellule=document.createElement("td");
+                                    cellule.setAttribute("scope","row");
+                                    cellule.innerHTML=ligne[nb].getElementsByTagName("td")[i].innerText;
+                                    ligneajt.appendChild(cellule);
+					           }
+					           if(recherchenull==true)
+                               {
+                                    recherchenull=false;
+                                    var ligneajt=document.createElement("tr");
+                                    var cellule;
+						            for(var i=0;i<=3;i++)
+                                    {
+                                        cellule=document.createElement("td");
+                                        cellule.setAttribute("scope","col");
+                                        cellule.innerHTML=ligne[0].getElementsByTagName("td")[i].innerText;
+                                        ligneajt.appendChild(cellule);
+						            }
+					           }
+					       colonne=3;
+				        }
+			         }
+		          }
+		          if(recherchenull==true)
+                  {
+			         alert("Aucun résultat n'a été trouvé pour votre recherche.");
+		          }
+	           }
+        }		
+</script>	
+  </body>
+</html>

@@ -1,5 +1,4 @@
-
-  ## Sujet
+## Sujet
 Un site web ergonomique pour la gestion de différentes ressources : réalisation une application permettant de gérer une liste de quiz (identifiant du quiz, nom, type de quiz, description, niveau de difficulté, date de création, nom de l'auteur).
 
 ![Screenshot](capture.png)

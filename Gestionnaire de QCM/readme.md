@@ -19,7 +19,7 @@ _Vous devez réaliser **toutes ces fonctionnalités** pour avoir la note maximal
 * [X] **Afficher les quiz de l'utilisateur connecté et des réponses déjà données** : reprendre la fonctionnalité d'affichage de tous les quiz et l'adapter pour afficher les quiz de l'utilisateur connecté dans l'onglet "MES QUIZ". Similairement, remplir l'onglet "MES REPONSES" pour afficher les quiz auxquels l'utilisateur connecté a répondu
 * [X] **Créer un quiz pour l'utilisateur connecté** : ajouter un formulaire permettant de saisir les informations d'un nouveau quiz dans l'onglet "MES QUIZ". Ajouter un bouton "Créer" qu déclenchera l'ajout du quiz sur le serveur et le rafraîchissement de la liste des quiz. Permettre d'ajouter aux quiz de l'utilisateur connecté un formulaire d'ajout de question. Ce formulaire permettra de saisir les propositions possibles pour la question. Sa validation déclenchera l'ajout de la question sur le serveur.
 
-
+![Home](home.png)
 
 Partie 2 : fonctionnalités optionnelles (au choix) pour le 24/05/20 - 23h59 
 ----------------------------------------------------------------
@@ -50,6 +50,8 @@ Partie 2 : fonctionnalités optionnelles (au choix) pour le 24/05/20 - 23h59
 
 * [X] Catégorie **mise à jour dynamique**
   - Gérer la mise à jour dynamique de la liste des quiz avec avec le _websocket_ fourni par le fichier [`websocket.js`](./js/websocket.js). La fonction fournie `installWebSocket(callbackOnMessage)` prend un paramètre un callback qui devra lancer le rafraichissement de votre interface lors d'une mise à jour sur le serveur.
+
+![Connexion](connexion.png)
 
 Remarques additionnelles
 ------------------------
